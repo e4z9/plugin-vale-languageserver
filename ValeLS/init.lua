@@ -221,7 +221,7 @@ local function setupClient()
     },
     initializationOptions = createInitOptions,
     settings = Settings,
-    startBehavior = "RequiresFile",
+    startBehavior = "RequiresProjectOrFile",
     onStartFailed = function()
       a.sync(function()
         if IsTryingToInstall == true then
